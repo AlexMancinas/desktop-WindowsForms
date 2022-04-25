@@ -1,0 +1,11 @@
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\bin\Debug\sistemaPOS.exe.config
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\bin\Debug\sistemaPOS.exe
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\bin\Debug\sistemaPOS.pdb
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.csproj.AssemblyReference.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.csproj.SuggestedBindingRedirects.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.Form1.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.Properties.Resources.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.csproj.GenerateResource.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.csproj.CoreCompileInputs.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.exe
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\sistemaPOS\sistemaPOS\obj\Debug\sistemaPOS.pdb
