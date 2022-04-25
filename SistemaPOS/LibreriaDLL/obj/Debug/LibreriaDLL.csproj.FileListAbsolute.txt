@@ -1,6 +1,0 @@
-C:\Users\MANCINAS\source\repos\WindowsFormsApp1\LibreriaDLL\bin\Debug\LibreriaDLL.dll
-C:\Users\MANCINAS\source\repos\WindowsFormsApp1\LibreriaDLL\bin\Debug\LibreriaDLL.pdb
-C:\Users\MANCINAS\source\repos\WindowsFormsApp1\LibreriaDLL\obj\Debug\LibreriaDLL.csproj.AssemblyReference.cache
-C:\Users\MANCINAS\source\repos\WindowsFormsApp1\LibreriaDLL\obj\Debug\LibreriaDLL.csproj.CoreCompileInputs.cache
-C:\Users\MANCINAS\source\repos\WindowsFormsApp1\LibreriaDLL\obj\Debug\LibreriaDLL.dll
-C:\Users\MANCINAS\source\repos\WindowsFormsApp1\LibreriaDLL\obj\Debug\LibreriaDLL.pdb
