@@ -1,0 +1,14 @@
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\bin\Debug\SistemaPOS.exe.config
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\bin\Debug\SistemaPOS.exe
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\bin\Debug\SistemaPOS.pdb
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.csproj.AssemblyReference.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.csproj.SuggestedBindingRedirects.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Form1.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Properties.Resources.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.csproj.GenerateResource.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.csproj.CoreCompileInputs.cache
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.exe
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.pdb
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\bin\Debug\LibreriaDLL.dll
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\bin\Debug\LibreriaDLL.pdb
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.csproj.CopyComplete

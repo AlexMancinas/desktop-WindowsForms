@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaPOS", "SistemaPOS\SistemaPOS.csproj", "{B4FCBECE-F0E0-40A7-970C-9993E5C2422F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibreriaDLL", "LibreriaDLL\LibreriaDLL.csproj", "{73F5F9D2-9A6D-4874-88EC-9EA1DCB1E2F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B4FCBECE-F0E0-40A7-970C-9993E5C2422F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FCBECE-F0E0-40A7-970C-9993E5C2422F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FCBECE-F0E0-40A7-970C-9993E5C2422F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FCBECE-F0E0-40A7-970C-9993E5C2422F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73F5F9D2-9A6D-4874-88EC-9EA1DCB1E2F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73F5F9D2-9A6D-4874-88EC-9EA1DCB1E2F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73F5F9D2-9A6D-4874-88EC-9EA1DCB1E2F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73F5F9D2-9A6D-4874-88EC-9EA1DCB1E2F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {09000748-A2BE-436B-A7C3-54339EF4A4C9}
+	EndGlobalSection
+EndGlobal
