@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using LibreriaDLL;
 namespace SistemaPOS
 {
     public partial class Usuario : Form
@@ -15,6 +15,24 @@ namespace SistemaPOS
         public Usuario()
         {
             InitializeComponent();
+        }
+
+        private void Usuario_Load(object sender, EventArgs e)
+        {
+            string consulta = "SELECT * FROM Usuarios WHERE id_usuario = " + Login.Codigo;
+            DataSet Data = Biblioteca.Herramientas(consulta);
+
+            lNombre.Text = Data.Tables[0].Rows[0]["username"].ToString();
+            lUser.Text = Data.Tables[0].Rows[0]["account"].ToString();
+            lCodigo.Text = Data.Tables[0].Rows[0]["id_usuario"].ToString();
+
+            string imagen = Data.Tables[0].Rows[0]["imagen"].ToString();
+            pictureBox1.Image = Image.FromFile(imagen);
+        }
+
+        private void Usuario_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

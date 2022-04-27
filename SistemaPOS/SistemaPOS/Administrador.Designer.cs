@@ -31,20 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Administrador));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lAdmin = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lAdminCodigo = new System.Windows.Forms.Label();
+            this.lAdminUser = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(589, 44);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(219, 196);
@@ -63,13 +64,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Administrador:";
             // 
-            // label2
+            // lAdmin
             // 
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label2.Location = new System.Drawing.Point(206, 69);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(120, 20);
-            this.label2.TabIndex = 2;
+            this.lAdmin.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lAdmin.Location = new System.Drawing.Point(206, 69);
+            this.lAdmin.Name = "lAdmin";
+            this.lAdmin.Size = new System.Drawing.Size(184, 31);
+            this.lAdmin.TabIndex = 2;
+            this.lAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -131,21 +133,23 @@
             this.label4.TabIndex = 13;
             this.label4.Text = "Código:";
             // 
-            // label5
+            // lAdminCodigo
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(206, 245);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 20);
-            this.label5.TabIndex = 14;
+            this.lAdminCodigo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lAdminCodigo.Location = new System.Drawing.Point(206, 245);
+            this.lAdminCodigo.Name = "lAdminCodigo";
+            this.lAdminCodigo.Size = new System.Drawing.Size(184, 31);
+            this.lAdminCodigo.TabIndex = 14;
+            this.lAdminCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // lAdminUser
             // 
-            this.label6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label6.Location = new System.Drawing.Point(206, 150);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 20);
-            this.label6.TabIndex = 15;
+            this.lAdminUser.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lAdminUser.Location = new System.Drawing.Point(206, 150);
+            this.lAdminUser.Name = "lAdminUser";
+            this.lAdminUser.Size = new System.Drawing.Size(184, 31);
+            this.lAdminUser.TabIndex = 15;
+            this.lAdminUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Administrador
             // 
@@ -154,20 +158,23 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 546);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lAdminUser);
+            this.Controls.Add(this.lAdminCodigo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lAdmin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.MaximizeBox = false;
             this.Name = "Administrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Administrador";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Administrador_FormClosed);
+            this.Load += new System.EventHandler(this.Administrador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -178,14 +185,14 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lAdmin;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lAdminCodigo;
+        private System.Windows.Forms.Label lAdminUser;
     }
 }
