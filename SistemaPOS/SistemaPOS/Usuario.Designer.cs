@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuario));
             this.lUser = new System.Windows.Forms.Label();
             this.lCodigo = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,6 +40,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(781, 381);
+            this.btnSalir.Size = new System.Drawing.Size(141, 47);
             // 
             // lUser
             // 
@@ -110,6 +114,7 @@
             this.button1.TabIndex = 19;
             this.button1.Text = "Principal";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lNombre
             // 
@@ -145,7 +150,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(967, 530);
             this.Controls.Add(this.lUser);
             this.Controls.Add(this.lCodigo);
@@ -163,6 +167,17 @@
             this.Text = "Usuario";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Usuario_FormClosed);
             this.Load += new System.EventHandler(this.Usuario_Load);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.lNombre, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.lCodigo, 0);
+            this.Controls.SetChildIndex(this.lUser, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

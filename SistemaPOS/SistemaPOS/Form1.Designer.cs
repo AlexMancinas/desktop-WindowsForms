@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.btnIninicar = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textUsuario = new System.Windows.Forms.TextBox();
             this.textPassword = new System.Windows.Forms.TextBox();
@@ -38,6 +37,11 @@
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(363, 490);
+            this.btnSalir.Size = new System.Drawing.Size(167, 63);
             // 
             // btnIninicar
             // 
@@ -48,15 +52,6 @@
             this.btnIninicar.Text = "Iniciar sesion";
             this.btnIninicar.UseVisualStyleBackColor = true;
             this.btnIninicar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.Location = new System.Drawing.Point(327, 479);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(171, 63);
-            this.btnSalir.TabIndex = 1;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = true;
             // 
             // pictureBox1
             // 
@@ -117,14 +112,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(587, 569);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textPassword);
             this.Controls.Add(this.textUsuario);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnIninicar);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(605, 616);
@@ -134,6 +127,13 @@
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.Load += new System.EventHandler(this.Login_Load);
+            this.Controls.SetChildIndex(this.btnIninicar, 0);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.textUsuario, 0);
+            this.Controls.SetChildIndex(this.textPassword, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,7 +143,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnIninicar;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox textUsuario;
         private System.Windows.Forms.TextBox textPassword;

@@ -43,6 +43,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(768, 468);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -81,6 +85,7 @@
             this.button1.TabIndex = 7;
             this.button1.Text = "Principal";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -156,7 +161,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 546);
             this.Controls.Add(this.lAdminUser);
             this.Controls.Add(this.lAdminCodigo);
@@ -175,6 +179,18 @@
             this.Text = "Administrador";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Administrador_FormClosed);
             this.Load += new System.EventHandler(this.Administrador_Load);
+            this.Controls.SetChildIndex(this.pictureBox1, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.lAdmin, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button2, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.button4, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.lAdminCodigo, 0);
+            this.Controls.SetChildIndex(this.lAdminUser, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

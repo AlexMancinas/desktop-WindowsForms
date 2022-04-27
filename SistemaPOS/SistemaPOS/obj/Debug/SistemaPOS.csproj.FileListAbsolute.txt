@@ -14,3 +14,9 @@ C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\De
 C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Administrador.resources
 C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Login.resources
 C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Usuario.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.FormBase.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Consultas.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.ContenedorPrincipal.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Mantenimiento.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Procesos.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.MantenimientoClientes.resources

@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using LibreriaDLL;
 namespace SistemaPOS
 {
-    public partial class Administrador : Form
+    public partial class Administrador : FormBase
     {
         public Administrador()
         {
@@ -35,6 +35,13 @@ namespace SistemaPOS
             pictureBox1.Image = Image.FromFile(imagen);
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal con_principal = new ContenedorPrincipal();
+            this.Hide();
+            con_principal.Show();
         }
     }
 }

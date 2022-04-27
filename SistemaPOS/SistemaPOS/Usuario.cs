@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using LibreriaDLL;
 namespace SistemaPOS
 {
-    public partial class Usuario : Form
+    public partial class Usuario : FormBase
     {
         public Usuario()
         {
@@ -33,6 +33,14 @@ namespace SistemaPOS
         private void Usuario_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ContenedorPrincipal con_principal = new ContenedorPrincipal();
+            this.Hide();
+            con_principal.Show();
+
         }
     }
 }

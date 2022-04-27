@@ -55,11 +55,53 @@
     <Compile Include="Administrador.Designer.cs">
       <DependentUpon>Administrador.cs</DependentUpon>
     </Compile>
+    <Compile Include="base.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="base.Designer.cs">
+      <DependentUpon>base.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consultas.Designer.cs">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ContenedorPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContenedorPrincipal.Designer.cs">
+      <DependentUpon>ContenedorPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento.Designer.cs">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoClientes.Designer.cs">
+      <DependentUpon>MantenimientoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenimientoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenimientoProductos.Designer.cs">
+      <DependentUpon>MantenimientoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos.Designer.cs">
+      <DependentUpon>Procesos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +114,26 @@
     <EmbeddedResource Include="Administrador.resx">
       <DependentUpon>Administrador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="base.resx">
+      <DependentUpon>base.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Consultas.resx">
+      <DependentUpon>Consultas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContenedorPrincipal.resx">
+      <DependentUpon>ContenedorPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimiento.resx">
+      <DependentUpon>Mantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoClientes.resx">
+      <DependentUpon>MantenimientoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos.resx">
+      <DependentUpon>Procesos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
