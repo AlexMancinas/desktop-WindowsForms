@@ -17,13 +17,16 @@ namespace SistemaPOS
             InitializeComponent();
         }
 
+       
         private void ConsultarProductos_Load(object sender, EventArgs e)
         {
+            //Hacer que se muestre la informacion en la tabla
             dataGridView1.DataSource = MostrarInfoDG("Articulos").Tables[0];
         }
-        // Buscador 
+        // Buscador productos
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            //validacion para campos en blanco del buscador
             if (string.IsNullOrEmpty(textBuscar.Text.Trim()) == false)
             {
                 try

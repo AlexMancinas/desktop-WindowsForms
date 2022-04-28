@@ -30,6 +30,10 @@
         {
             this.SuspendLayout();
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
             // seleccionar
             // 
             this.seleccionar.Click += new System.EventHandler(this.seleccionar_Click);
@@ -41,6 +45,7 @@
             this.ClientSize = new System.Drawing.Size(842, 544);
             this.Name = "ConsultarCliente";
             this.Text = "ConsultarCliente";
+            this.Load += new System.EventHandler(this.ConsultarCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
