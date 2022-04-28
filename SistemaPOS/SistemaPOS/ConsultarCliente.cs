@@ -16,5 +16,18 @@ namespace SistemaPOS
         {
             InitializeComponent();
         }
+
+        private void seleccionar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.Rows.Count == 0)
+            {
+                return;
+            }
+            else
+            {
+                DialogResult = DialogResult.OK;
+                Close();
+            }
+        }
     }
 }

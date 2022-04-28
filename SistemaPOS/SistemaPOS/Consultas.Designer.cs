@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBuscar = new System.Windows.Forms.Button();
             this.seleccionar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBuscar = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -41,14 +41,14 @@
             // 
             this.btnSalir.Location = new System.Drawing.Point(635, 455);
             // 
-            // button1
+            // btnBuscar
             // 
-            this.button1.Location = new System.Drawing.Point(575, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 48);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Buscar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBuscar.Location = new System.Drawing.Point(575, 47);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(127, 48);
+            this.btnBuscar.TabIndex = 1;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             // 
             // seleccionar
             // 
@@ -60,14 +60,14 @@
             this.seleccionar.UseVisualStyleBackColor = true;
             this.seleccionar.Click += new System.EventHandler(this.seleccionar_Click);
             // 
-            // button3
+            // btnImprimir
             // 
-            this.button3.Location = new System.Drawing.Point(340, 455);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(211, 55);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Imprimir";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnImprimir.Location = new System.Drawing.Point(340, 455);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(211, 55);
+            this.btnImprimir.TabIndex = 3;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -81,12 +81,12 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Nombre: ";
             // 
-            // textBox1
+            // textBuscar
             // 
-            this.textBox1.Location = new System.Drawing.Point(188, 67);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(308, 22);
-            this.textBox1.TabIndex = 5;
+            this.textBuscar.Location = new System.Drawing.Point(188, 67);
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(308, 22);
+            this.textBuscar.TabIndex = 5;
             // 
             // dataGridView1
             // 
@@ -110,19 +110,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 545);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBuscar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.seleccionar);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnBuscar);
             this.Name = "Consultas";
             this.Text = "Consultas";
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btnBuscar, 0);
             this.Controls.SetChildIndex(this.seleccionar, 0);
-            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.btnImprimir, 0);
             this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.textBuscar, 0);
             this.Controls.SetChildIndex(this.dataGridView1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -131,12 +131,11 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button seleccionar;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.DataGridView dataGridView1;
+        public System.Windows.Forms.Button btnBuscar;
+        public System.Windows.Forms.Button seleccionar;
+        public System.Windows.Forms.Button btnImprimir;
+        public System.Windows.Forms.TextBox textBuscar;
     }
 }
