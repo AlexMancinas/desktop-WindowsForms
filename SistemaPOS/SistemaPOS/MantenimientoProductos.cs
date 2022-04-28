@@ -66,5 +66,20 @@ namespace SistemaPOS
         {
             errorProvider1.Clear();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Validar los campos y sino estan nulos vaciar los campos
+            if(string.IsNullOrEmpty(textIdProducto.Text.Trim()) == false && string.IsNullOrEmpty(textPrecioProducto.Text.Trim()) == false && string.IsNullOrEmpty(textDescripcionProducto.Text.Trim()) == false)
+            {
+                textIdProducto.Text = "";
+                textPrecioProducto.Text = "";
+                textDescripcionProducto.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("Todos los campos deben estar llenos");
+            }
+        }
     }
 }

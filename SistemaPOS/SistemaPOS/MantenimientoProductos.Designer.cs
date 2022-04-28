@@ -52,6 +52,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(454, 304);
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
