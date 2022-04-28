@@ -23,3 +23,4 @@ C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\De
 C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.MantenimientoProductos.resources
 C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.ConsultarCliente.resources
 C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.ConsultarProductos.resources
+C:\Users\MANCINAS\Documents\GitHub\desktop-tutorial\SistemaPOS\SistemaPOS\obj\Debug\SistemaPOS.Facturacion.resources
