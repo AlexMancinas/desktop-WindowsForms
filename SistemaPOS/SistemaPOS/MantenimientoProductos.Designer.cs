@@ -41,9 +41,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnConsultar
             // 
             this.btnConsultar.Location = new System.Drawing.Point(69, 304);
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // button2
             // 

@@ -81,5 +81,12 @@ namespace SistemaPOS
                 MessageBox.Show("Todos los campos deben estar llenos");
             }
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+        {
+            ConsultarProductos ConsulPro = new ConsultarProductos();
+           
+            ConsulPro.Show();
+        }
     }
 }
