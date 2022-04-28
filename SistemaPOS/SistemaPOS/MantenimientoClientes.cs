@@ -75,5 +75,21 @@ namespace SistemaPOS
         {
             errorProvider1.Clear();
         }
+        //Boton de NUEVO
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //Validar si todos los campos estan llenos para poder vaciarlos
+            if (string.IsNullOrEmpty(textIdCliente.Text.Trim()) == false && string.IsNullOrEmpty(textNombreCliente.Text.Trim()) == false && string.IsNullOrEmpty(textApellidoCliente.Text.Trim()) == false)
+            {
+                textIdCliente.Text = "";
+                textNombreCliente.Text = "";
+                textApellidoCliente.Text = "";
+            }
+            //Alerta en caso de que algun campo no este lleno
+            else
+            {
+                MessageBox.Show("Todos los campos deben estar llenos");
+            }
+        }
     }
 }
