@@ -21,7 +21,7 @@ namespace SistemaPOS
         {
             Application.Exit();
         }
-
+        //Extrae los datos del usuario y los muestra en pantalla 
         private void Administrador_Load(object sender, EventArgs e)
         {
             string consulta = "SELECT * FROM Usuarios WHERE id_usuario = " + Login.Codigo;
@@ -36,7 +36,7 @@ namespace SistemaPOS
 
 
         }
-
+        //Cierra la ventana donde muestra datos del usuario y se pasa al contenedor principal
         private void button1_Click(object sender, EventArgs e)
         {
             ContenedorPrincipal con_principal = new ContenedorPrincipal();

@@ -61,6 +61,18 @@
     <Compile Include="base.Designer.cs">
       <DependentUpon>base.cs</DependentUpon>
     </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarProductos.Designer.cs">
+      <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consultas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +129,12 @@
     <EmbeddedResource Include="base.resx">
       <DependentUpon>base.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarProductos.resx">
+      <DependentUpon>ConsultarProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consultas.resx">
       <DependentUpon>Consultas.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MantenimientoClientes.resx">
       <DependentUpon>MantenimientoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenimientoProductos.resx">
+      <DependentUpon>MantenimientoProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procesos.resx">
       <DependentUpon>Procesos.cs</DependentUpon>

@@ -106,9 +106,33 @@ namespace SistemaPOS
 
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //Se oculta la ventana mdi y se muestra la ventana MantenimientoClientes
             MantenimientoClientes ManCli = new MantenimientoClientes();
             ManCli.MdiParent = this;
             ManCli.Show();
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //Se oculta la ventana mdi y se muestra la ventana MantenimientoProductos
+            MantenimientoProductos ManPro = new MantenimientoProductos();
+            ManPro.MdiParent = this;
+            ManPro.Show();
+        }
+
+        private void productosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultarProductos ConsulPro = new ConsultarProductos();
+            ConsulPro.MdiParent = this;
+            ConsulPro.Show();
+
+        }
+
+        private void clientesToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente ConsulClien = new ConsultarCliente();
+            ConsulClien.MdiParent = this;
+            ConsulClien.Show();
         }
     }
 }

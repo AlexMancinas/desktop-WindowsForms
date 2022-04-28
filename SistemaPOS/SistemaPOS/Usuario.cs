@@ -16,7 +16,7 @@ namespace SistemaPOS
         {
             InitializeComponent();
         }
-
+        //Muestra los datos del usuario 
         private void Usuario_Load(object sender, EventArgs e)
         {
             string consulta = "SELECT * FROM Usuarios WHERE id_usuario = " + Login.Codigo;
@@ -29,12 +29,12 @@ namespace SistemaPOS
             string imagen = Data.Tables[0].Rows[0]["imagen"].ToString();
             pictureBox1.Image = Image.FromFile(imagen);
         }
-
+        //Salir del programa al presionar la X
         private void Usuario_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }
-
+        //Pasar de la ventana usuario al contenedor principal (MDI)
         private void button1_Click(object sender, EventArgs e)
         {
             ContenedorPrincipal con_principal = new ContenedorPrincipal();
