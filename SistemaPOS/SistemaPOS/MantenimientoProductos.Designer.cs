@@ -43,7 +43,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(69, 304);
+            this.btnConsultar.Location = new System.Drawing.Point(69, 304);
             // 
             // button2
             // 
@@ -163,7 +163,7 @@
             this.Text = "MantenimientoProductos";
             this.Load += new System.EventHandler(this.MantenimientoProductos_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btnConsultar, 0);
             this.Controls.SetChildIndex(this.button2, 0);
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.button4, 0);

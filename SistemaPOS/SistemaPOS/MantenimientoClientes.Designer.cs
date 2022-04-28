@@ -43,8 +43,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(83, 306);
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnConsultar.Location = new System.Drawing.Point(83, 306);
+            this.btnConsultar.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -164,7 +164,7 @@
             this.Text = "MantenimientoClientes";
             this.Load += new System.EventHandler(this.MantenimientoClientes_Load);
             this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btnConsultar, 0);
             this.Controls.SetChildIndex(this.button2, 0);
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.button4, 0);

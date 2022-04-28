@@ -19,7 +19,9 @@ namespace SistemaPOS
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
+            ConsultarCliente ConsulClien = new ConsultarCliente();
+            
+            ConsulClien.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
