@@ -34,6 +34,7 @@ namespace SistemaPOS
         //Guardar CLientes
         public override Boolean Guardar()
         {
+            //Validacion para no tener espacios en blanco en formulario Clientes
             if (Biblioteca.ValidarFormulario(this, errorProvider1)==false)
             {
                 try

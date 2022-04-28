@@ -35,8 +35,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textIdProducto = new LibreriaDLL.ErrorTxtBox();
-            this.textPrecioProducto = new LibreriaDLL.ErrorTxtBox();
             this.textDescripcionProducto = new LibreriaDLL.ErrorTxtBox();
+            this.textPrecioProducto = new LibreriaDLL.ErrorTxtBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -124,33 +124,34 @@
             this.textIdProducto.TabIndex = 13;
             this.textIdProducto.Validar = true;
             this.textIdProducto.ValidarNumeros = true;
+            this.textIdProducto.TextChanged += new System.EventHandler(this.textIdProducto_TextChanged);
+            // 
+            // textDescripcionProducto
+            // 
+            this.textDescripcionProducto.Location = new System.Drawing.Point(268, 187);
+            this.textDescripcionProducto.Multiline = true;
+            this.textDescripcionProducto.Name = "textDescripcionProducto";
+            this.textDescripcionProducto.Size = new System.Drawing.Size(176, 89);
+            this.textDescripcionProducto.TabIndex = 16;
+            this.textDescripcionProducto.Validar = true;
+            this.textDescripcionProducto.ValidarNumeros = false;
             // 
             // textPrecioProducto
             // 
             this.textPrecioProducto.Location = new System.Drawing.Point(268, 146);
             this.textPrecioProducto.Name = "textPrecioProducto";
             this.textPrecioProducto.Size = new System.Drawing.Size(176, 22);
-            this.textPrecioProducto.TabIndex = 14;
+            this.textPrecioProducto.TabIndex = 17;
             this.textPrecioProducto.Validar = true;
             this.textPrecioProducto.ValidarNumeros = false;
-            // 
-            // textDescripcionProducto
-            // 
-            this.textDescripcionProducto.Location = new System.Drawing.Point(268, 185);
-            this.textDescripcionProducto.Multiline = true;
-            this.textDescripcionProducto.Name = "textDescripcionProducto";
-            this.textDescripcionProducto.Size = new System.Drawing.Size(176, 62);
-            this.textDescripcionProducto.TabIndex = 15;
-            this.textDescripcionProducto.Validar = true;
-            this.textDescripcionProducto.ValidarNumeros = false;
             // 
             // MantenimientoProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textDescripcionProducto);
             this.Controls.Add(this.textPrecioProducto);
+            this.Controls.Add(this.textDescripcionProducto);
             this.Controls.Add(this.textIdProducto);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
@@ -171,8 +172,8 @@
             this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.textIdProducto, 0);
-            this.Controls.SetChildIndex(this.textPrecioProducto, 0);
             this.Controls.SetChildIndex(this.textDescripcionProducto, 0);
+            this.Controls.SetChildIndex(this.textPrecioProducto, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -187,7 +188,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private LibreriaDLL.ErrorTxtBox textIdProducto;
-        private LibreriaDLL.ErrorTxtBox textPrecioProducto;
         private LibreriaDLL.ErrorTxtBox textDescripcionProducto;
+        private LibreriaDLL.ErrorTxtBox textPrecioProducto;
     }
 }

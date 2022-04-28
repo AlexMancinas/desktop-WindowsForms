@@ -25,16 +25,24 @@ namespace SistemaPOS
         //Guardar Productos
         public override Boolean Guardar()
         {
-            try
+            if (Biblioteca.ValidarFormulario(this, errorProvider1) == false)
             {
-                string insertar = string.Format("EXEC ActualizarProductos '{0}','{1}','{2}'",textIdProducto.Text.Trim(),textDescripcionProducto.Text.Trim(),textPrecioProducto.Text.Trim());
-                Biblioteca.Herramientas(insertar);
-                MessageBox.Show("Producto guardado correctamente");
-                return true;
+
+                try
+                {
+                    string insertar = string.Format("EXEC ActualizarProductos '{0}','{1}','{2}'", textIdProducto.Text.Trim(), textDescripcionProducto.Text.Trim(), textPrecioProducto.Text.Trim());
+                    Biblioteca.Herramientas(insertar);
+                    MessageBox.Show("Producto guardado correctamente");
+                    return true;
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Ha ocurrido un error: " + error);
+                    return false;
+                }
             }
-            catch (Exception error)
+            else
             {
-                MessageBox.Show("Ha ocurrido un error: "+error);
                 return false;
             }
         }
@@ -52,6 +60,11 @@ namespace SistemaPOS
                 MessageBox.Show("Ha ocurrudo un error: " + error);
             }
             
+        }
+
+        private void textIdProducto_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
         }
     }
 }
