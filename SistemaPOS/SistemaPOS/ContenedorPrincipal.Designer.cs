@@ -428,8 +428,9 @@
             // facturacionToolStripMenuItem
             // 
             this.facturacionToolStripMenuItem.Name = "facturacionToolStripMenuItem";
-            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(167, 26);
+            this.facturacionToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.facturacionToolStripMenuItem.Text = "Facturacion";
+            this.facturacionToolStripMenuItem.Click += new System.EventHandler(this.facturacionToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 
@@ -444,21 +445,21 @@
             // clientesToolStripMenuItem1
             // 
             this.clientesToolStripMenuItem1.Name = "clientesToolStripMenuItem1";
-            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.clientesToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
             this.clientesToolStripMenuItem1.Text = "Clientes ";
             this.clientesToolStripMenuItem1.Click += new System.EventHandler(this.clientesToolStripMenuItem1_Click);
             // 
             // productosToolStripMenuItem1
             // 
             this.productosToolStripMenuItem1.Name = "productosToolStripMenuItem1";
-            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(224, 26);
+            this.productosToolStripMenuItem1.Size = new System.Drawing.Size(158, 26);
             this.productosToolStripMenuItem1.Text = "Productos";
             this.productosToolStripMenuItem1.Click += new System.EventHandler(this.productosToolStripMenuItem1_Click);
             // 
             // ventasToolStripMenuItem
             // 
             this.ventasToolStripMenuItem.Name = "ventasToolStripMenuItem";
-            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.ventasToolStripMenuItem.Size = new System.Drawing.Size(158, 26);
             this.ventasToolStripMenuItem.Text = "Ventas";
             // 
             // helpMenu

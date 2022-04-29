@@ -134,5 +134,12 @@ namespace SistemaPOS
             ConsulClien.MdiParent = this;
             ConsulClien.Show();
         }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Facturacion factu = new Facturacion();
+            factu.MdiParent = this;
+            factu.Show();
+        }
     }
 }
