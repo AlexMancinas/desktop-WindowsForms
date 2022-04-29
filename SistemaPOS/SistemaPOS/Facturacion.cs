@@ -43,13 +43,67 @@ namespace SistemaPOS
 
                     txtCliente.Text = ds.Tables[0].Rows[0]["Nombre_cliente"].ToString().Trim();
 
-                    txtDescripcionProd.Focus();
+                    TxtCodigoProducto.Focus();
                 }
 
             }
             catch(Exception error)
             {
                 MessageBox.Show("Ha ocurrido un error: " + error.Message);
+            }
+        }
+
+        private void txtPrecio_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public static int contadorFila = 0;
+        private void btnColocar_Click(object sender, EventArgs e)
+        {
+            if (Biblioteca.ValidarFormulario(this,errorProvider1) == false)
+            {
+                bool existe = false;
+                int numeroFila = 0;
+
+                if(contadorFila == 0)
+                {
+                    dataGridView1.Rows.Add(TxtCodigoProducto.Text, txtDescripcionProd.Text,txtPrecio.Text, txtCantidad.Text);
+                    double importe = Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[3].Value);
+                    dataGridView1.Rows[contadorFila].Cells[4].Value = importe;
+
+                    contadorFila++;
+                }
+                else
+                {
+                    foreach(DataGridViewRow Fila in dataGridView1.Rows)
+                    {
+                        if(Fila.Cells[0].Value.ToString() == TxtCodigoProducto.Text)
+                        {
+                            existe = true;
+                            numeroFila = Fila.Index;
+                        }
+                       
+                    }
+                }
+                if(existe == true)
+                {
+                    dataGridView1.Rows[numeroFila].Cells[3].Value = (Convert.ToDouble(txtCantidad.Text) + Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[3].Value)).ToString();
+                    double importe = Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[3].Value);
+                    dataGridView1.Rows[numeroFila].Cells[4].Value = importe;
+                }
+                else
+                {
+                    if (dataGridView1.Rows[0].Cells[0].Value.ToString() != TxtCodigoProducto.Text) {
+                        dataGridView1.Rows.Add(TxtCodigoProducto.Text, txtDescripcionProd.Text, txtCantidad.Text);
+                        double importe = Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[3].Value);
+                        dataGridView1.Rows[contadorFila].Cells[4].Value = importe;
+
+                        contadorFila++;
+                    }
+
+                      
+                }
             }
         }
     }
