@@ -195,5 +195,39 @@ namespace SistemaPOS
             total = 0;
             txtCodigoCliente.Focus();
         }
+
+        private void btnFacturar_Click(object sender, EventArgs e)
+        {
+            
+            if (contadorFila != 0)
+            {
+                try 
+                {
+                    string cmd = string.Format("Exec ActualizarFacturas '{0}'",txtCodigoCliente.Text.Trim());
+                    DataSet DS = Biblioteca.Herramientas(cmd);
+
+                    string Numerofactura = DS.Tables[0].Rows[0]["NumeroFactura"].ToString().Trim();
+
+                    foreach(DataGridViewRow Fila in dataGridView1.Rows)
+                    {
+                        cmd = String.Format("Exec ActualizarDetalles '{0}','{1}','{2}','{3}'",Numerofactura,Fila.Cells[0].Value.ToString(),Fila.Cells[2].Value.ToString(),Fila.Cells[3].Value.ToString());
+                        DS = Biblioteca.Herramientas(cmd);
+                    }
+                    cmd = ("Exec DatosFactura " + Numerofactura);
+                    DS=Biblioteca.Herramientas(cmd);
+
+                    Factura fac = new Factura();
+                    fac.reportViewer1.LocalReport.DataSources[0].Value = DS.Tables[0];
+                    fac.ShowDialog();
+
+                    Nuevo();
+
+                }
+                catch (Exception error)
+                {
+                    MessageBox.Show("Error: " + error);
+                }
+            }
+        }
     }
 }

@@ -147,6 +147,7 @@
             this.btnFacturar.TabIndex = 6;
             this.btnFacturar.Text = "Facturar";
             this.btnFacturar.UseVisualStyleBackColor = true;
+            this.btnFacturar.Click += new System.EventHandler(this.btnFacturar_Click);
             // 
             // label1
             // 
@@ -569,7 +570,6 @@
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnColocar;
-        private System.Windows.Forms.Button btnFacturar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -601,5 +601,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Precio;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Importe;
+        public System.Windows.Forms.Button btnFacturar;
     }
 }
