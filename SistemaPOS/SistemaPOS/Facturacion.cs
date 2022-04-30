@@ -36,6 +36,7 @@ namespace SistemaPOS
         {
             try
             {
+                //Manda llamar el nombre del cliente identficado por el codigo 
                 if (string.IsNullOrEmpty(txtCodigoCliente.Text.Trim()) == false)
                 {
                     string cmd = string.Format("Select Nombre_cliente from Clientes where id_cliente = '{0}'", txtCodigoCliente.Text.Trim());
@@ -59,6 +60,7 @@ namespace SistemaPOS
         }
 
         public static int contadorFila = 0;
+        public static double total;
         private void btnColocar_Click(object sender, EventArgs e)
         {
             if (Biblioteca.ValidarFormulario(this,errorProvider1) == false)
@@ -73,6 +75,8 @@ namespace SistemaPOS
                     dataGridView1.Rows[contadorFila].Cells[4].Value = importe;
 
                     contadorFila++;
+                    
+                    
                 }
                 else
                 {
@@ -82,28 +86,58 @@ namespace SistemaPOS
                         {
                             existe = true;
                             numeroFila = Fila.Index;
+                                
                         }
                        
                     }
-                }
-                if(existe == true)
-                {
-                    dataGridView1.Rows[numeroFila].Cells[3].Value = (Convert.ToDouble(txtCantidad.Text) + Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[3].Value)).ToString();
-                    double importe = Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[3].Value);
-                    dataGridView1.Rows[numeroFila].Cells[4].Value = importe;
-                }
-                else
-                {
-                    if (dataGridView1.Rows[0].Cells[0].Value.ToString() != TxtCodigoProducto.Text) {
-                        dataGridView1.Rows.Add(TxtCodigoProducto.Text, txtDescripcionProd.Text, txtCantidad.Text);
-                        double importe = Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[3].Value);
-                        dataGridView1.Rows[contadorFila].Cells[4].Value = importe;
+                    if (existe == true)
+                    {
+                        dataGridView1.Rows[numeroFila].Cells[3].Value = (Convert.ToDouble(txtCantidad.Text) + Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[3].Value)).ToString();
+                        double importe = Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[3].Value);
+                        dataGridView1.Rows[numeroFila].Cells[4].Value = importe;
 
-                        contadorFila++;
+
                     }
+                    else
+                    {
+                        
+                            dataGridView1.Rows.Add(TxtCodigoProducto.Text, txtDescripcionProd.Text, txtPrecio.Text, txtCantidad.Text);
+                            double importe = Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[2].Value) * Convert.ToDouble(dataGridView1.Rows[contadorFila].Cells[3].Value);
+                            dataGridView1.Rows[contadorFila].Cells[4].Value = importe;
 
-                      
+                            contadorFila++;
+                       
+
+
+                    }
                 }
+              
+
+            }
+            total = 0;
+            foreach (DataGridViewRow Fila in dataGridView1.Rows)
+            {
+                
+                total += Convert.ToDouble(Fila.Cells[4].Value);
+
+                
+            }
+            lbTotal.Text = "USD$ " + total.ToString(); 
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            
+            if(contadorFila > 0)
+            {
+                //Seccion para solo eliminar la fila que se esta seleccionando y la autosuma se muestre 
+                //sin el elemento que se eliminó
+                total -= Convert.ToDouble(dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[4].Value);
+                lbTotal.Text  = "USD$ "+total.ToString();
+
+                dataGridView1.Rows.RemoveAt(dataGridView1.CurrentRow.Index);
+
+                contadorFila--;
             }
         }
     }
