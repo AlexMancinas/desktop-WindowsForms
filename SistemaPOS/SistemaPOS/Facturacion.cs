@@ -59,6 +59,7 @@ namespace SistemaPOS
 
         }
 
+        //Variables a utilizar para el los contadores
         public static int contadorFila = 0;
         public static double total;
         private void btnColocar_Click(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace SistemaPOS
                 bool existe = false;
                 int numeroFila = 0;
 
+                //Si aun no se llena nada, hace el primer registro de la tabla
                 if(contadorFila == 0)
                 {
                     dataGridView1.Rows.Add(TxtCodigoProducto.Text, txtDescripcionProd.Text,txtPrecio.Text, txtCantidad.Text);
@@ -80,6 +82,7 @@ namespace SistemaPOS
                 }
                 else
                 {
+                    //Revisa si ya existe el prodcuto que se quiere ingresar
                     foreach(DataGridViewRow Fila in dataGridView1.Rows)
                     {
                         if(Fila.Cells[0].Value.ToString() == TxtCodigoProducto.Text)
@@ -90,6 +93,7 @@ namespace SistemaPOS
                         }
                        
                     }
+                    //Suma los productos si la estan en las lista y le aumenta mas
                     if (existe == true)
                     {
                         dataGridView1.Rows[numeroFila].Cells[3].Value = (Convert.ToDouble(txtCantidad.Text) + Convert.ToDouble(dataGridView1.Rows[numeroFila].Cells[3].Value)).ToString();
@@ -98,6 +102,7 @@ namespace SistemaPOS
 
 
                     }
+                    //Coloca nuevos productos ingresados en la siguiente fila
                     else
                     {
                         
@@ -114,7 +119,9 @@ namespace SistemaPOS
               
 
             }
+            
             total = 0;
+            //lee todas las celdas para hacer la suma
             foreach (DataGridViewRow Fila in dataGridView1.Rows)
             {
                 
@@ -139,6 +146,54 @@ namespace SistemaPOS
 
                 contadorFila--;
             }
+        }
+        //Mandar llamar la ventana ConsultarCLientes para seleccionar el cliente al que se le va a facturar
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            ConsultarCliente ConsulClien = new ConsultarCliente();
+            ConsulClien.ShowDialog();
+
+            if(ConsulClien.DialogResult == DialogResult.OK)
+            {
+                txtCodigoCliente.Text = ConsulClien.dataGridView1.Rows[ConsulClien.dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+                txtCliente.Text = ConsulClien.dataGridView1.Rows[ConsulClien.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
+
+                TxtCodigoProducto.Focus();
+            }
+        }
+        //Mandar llamar la ventana de ConsultarProductos para seleccionar los productos necesarios
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            ConsultarProductos ConsulPro = new ConsultarProductos();
+            ConsulPro.ShowDialog();
+            if(ConsulPro.DialogResult == DialogResult.OK)
+            {
+                TxtCodigoProducto.Text = ConsulPro.dataGridView1.Rows[ConsulPro.dataGridView1.CurrentRow.Index].Cells[0].Value.ToString();
+                txtDescripcionProd.Text = ConsulPro.dataGridView1.Rows[ConsulPro.dataGridView1.CurrentRow.Index].Cells[1].Value.ToString();
+                txtPrecio.Text = ConsulPro.dataGridView1.Rows[ConsulPro.dataGridView1.CurrentRow.Index].Cells[2].Value.ToString();
+
+                txtCantidad.Focus();
+            }
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            Nuevo();
+        }
+        //Borrar todo y te vuelve a dejar el selector en el CODIGO DEL CLIENTE
+        public override void Nuevo()
+        {
+            txtCodigoCliente.Text = "";
+            txtCliente.Text = "";
+            txtDescripcionProd.Text = "";
+            txtDescripcionProd.Text = "";
+            txtCantidad.Text = "";
+            lbTotal.Text = "USD$ 0";
+            dataGridView1.Rows.Clear();
+
+            contadorFila = 0;
+            total = 0;
+            txtCodigoCliente.Focus();
         }
     }
 }
