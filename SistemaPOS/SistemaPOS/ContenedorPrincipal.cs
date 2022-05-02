@@ -141,5 +141,12 @@ namespace SistemaPOS
             factu.MdiParent = this;
             factu.Show();
         }
+
+        private void ventasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Ventas ventas = new Ventas();
+            ventas.MdiParent = this;
+            ventas.Show();
+        }
     }
 }
