@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ArrayOfEmployees xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Employees>
+    <Employee_ID>1234</Employee_ID>
+    <LastName>Smith</LastName>
+    <FirstName>John</FirstName>
+    <DateOfBirth>12/30/2018</DateOfBirth>
+  </Employees>
+  <Employees>
+    <Employee_ID>98765432</Employee_ID>
+    <LastName>Lopez</LastName>
+    <FirstName>Jose</FirstName>
+    <DateOfBirth>01/01/1960</DateOfBirth>
+  </Employees>
+  <Employees>
+    <Employee_ID>11111100</Employee_ID>
+    <LastName>Doe</LastName>
+    <FirstName>Joe</FirstName>
+    <DateOfBirth>11/05/1994</DateOfBirth>
+  </Employees>
+</ArrayOfEmployees>
