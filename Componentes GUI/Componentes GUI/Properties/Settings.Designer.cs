@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PracticaComponentesGUI.Properties
+namespace Componentes_GUI.Properties
 {
 
 

@@ -1,0 +1,11 @@
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\bin\Debug\Componentes GUI.exe.config
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\bin\Debug\Componentes GUI.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\bin\Debug\Componentes GUI.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes GUI.csproj.AssemblyReference.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes GUI.csproj.SuggestedBindingRedirects.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes_GUI.Form1.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes_GUI.Properties.Resources.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes GUI.csproj.GenerateResource.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes GUI.csproj.CoreCompileInputs.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes GUI.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Componentes GUI\Componentes GUI\obj\Debug\Componentes GUI.pdb
