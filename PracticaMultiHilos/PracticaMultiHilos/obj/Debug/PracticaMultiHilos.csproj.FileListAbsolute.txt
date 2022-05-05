@@ -1,0 +1,11 @@
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\bin\Debug\PracticaMultiHilos.exe.config
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\bin\Debug\PracticaMultiHilos.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\bin\Debug\PracticaMultiHilos.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.csproj.AssemblyReference.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.csproj.SuggestedBindingRedirects.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.Form1.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.Properties.Resources.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.csproj.GenerateResource.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.csproj.CoreCompileInputs.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\PracticaMultiHilos\PracticaMultiHilos\obj\Debug\PracticaMultiHilos.pdb
