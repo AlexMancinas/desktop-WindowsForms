@@ -32,13 +32,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.textBoxEmployeeId = new System.Windows.Forms.TextBox();
+            this.textBoxLastName = new System.Windows.Forms.TextBox();
+            this.textBoxFirstName = new System.Windows.Forms.TextBox();
+            this.textBoxDateOfBirth = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnCreateXML = new System.Windows.Forms.Button();
+            this.btnCreateTxt = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,73 +77,73 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Date Of Birth:";
             // 
-            // textBox1
+            // textBoxEmployeeId
             // 
-            this.textBox1.Location = new System.Drawing.Point(157, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 4;
+            this.textBoxEmployeeId.Location = new System.Drawing.Point(157, 51);
+            this.textBoxEmployeeId.Name = "textBoxEmployeeId";
+            this.textBoxEmployeeId.Size = new System.Drawing.Size(100, 22);
+            this.textBoxEmployeeId.TabIndex = 4;
             // 
-            // textBox2
+            // textBoxLastName
             // 
-            this.textBox2.Location = new System.Drawing.Point(157, 120);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 5;
+            this.textBoxLastName.Location = new System.Drawing.Point(157, 120);
+            this.textBoxLastName.Name = "textBoxLastName";
+            this.textBoxLastName.Size = new System.Drawing.Size(100, 22);
+            this.textBoxLastName.TabIndex = 5;
             // 
-            // textBox3
+            // textBoxFirstName
             // 
-            this.textBox3.Location = new System.Drawing.Point(157, 211);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 6;
+            this.textBoxFirstName.Location = new System.Drawing.Point(157, 211);
+            this.textBoxFirstName.Name = "textBoxFirstName";
+            this.textBoxFirstName.Size = new System.Drawing.Size(100, 22);
+            this.textBoxFirstName.TabIndex = 6;
             // 
-            // textBox4
+            // textBoxDateOfBirth
             // 
-            this.textBox4.Location = new System.Drawing.Point(157, 272);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 7;
+            this.textBoxDateOfBirth.Location = new System.Drawing.Point(157, 272);
+            this.textBoxDateOfBirth.Name = "textBoxDateOfBirth";
+            this.textBoxDateOfBirth.Size = new System.Drawing.Size(100, 22);
+            this.textBoxDateOfBirth.TabIndex = 7;
             // 
-            // button1
+            // btnSubmit
             // 
-            this.button1.Location = new System.Drawing.Point(363, 45);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 35);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Submit";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSubmit.Location = new System.Drawing.Point(363, 45);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(96, 35);
+            this.btnSubmit.TabIndex = 8;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnCreateXML
             // 
-            this.button2.Location = new System.Drawing.Point(363, 217);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 64);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Create XML File";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCreateXML.Location = new System.Drawing.Point(363, 217);
+            this.btnCreateXML.Name = "btnCreateXML";
+            this.btnCreateXML.Size = new System.Drawing.Size(96, 64);
+            this.btnCreateXML.TabIndex = 9;
+            this.btnCreateXML.Text = "Create XML File";
+            this.btnCreateXML.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnCreateTxt
             // 
-            this.button3.Location = new System.Drawing.Point(363, 120);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 58);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Create Text File";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnCreateTxt.Location = new System.Drawing.Point(363, 120);
+            this.btnCreateTxt.Name = "btnCreateTxt";
+            this.btnCreateTxt.Size = new System.Drawing.Size(96, 58);
+            this.btnCreateTxt.TabIndex = 10;
+            this.btnCreateTxt.Text = "Create Text File";
+            this.btnCreateTxt.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(533, 363);
+            this.Controls.Add(this.btnCreateTxt);
+            this.Controls.Add(this.btnCreateXML);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.textBoxDateOfBirth);
+            this.Controls.Add(this.textBoxFirstName);
+            this.Controls.Add(this.textBoxLastName);
+            this.Controls.Add(this.textBoxEmployeeId);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -161,13 +161,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBoxEmployeeId;
+        private System.Windows.Forms.TextBox textBoxLastName;
+        private System.Windows.Forms.TextBox textBoxFirstName;
+        private System.Windows.Forms.TextBox textBoxDateOfBirth;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnCreateXML;
+        private System.Windows.Forms.Button btnCreateTxt;
     }
 }
 
