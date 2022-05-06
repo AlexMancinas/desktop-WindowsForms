@@ -1,0 +1,11 @@
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\bin\Debug\Examen.exe.config
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\bin\Debug\Examen.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\bin\Debug\Examen.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.csproj.AssemblyReference.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.csproj.SuggestedBindingRedirects.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.Form1.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.Properties.Resources.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.csproj.GenerateResource.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.csproj.CoreCompileInputs.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\Examen\Examen\obj\Debug\Examen.pdb
