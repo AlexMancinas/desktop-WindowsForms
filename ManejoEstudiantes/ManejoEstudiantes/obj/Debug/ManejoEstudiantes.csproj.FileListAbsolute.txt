@@ -1,0 +1,11 @@
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\bin\Debug\ManejoEstudiantes.exe.config
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\bin\Debug\ManejoEstudiantes.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\bin\Debug\ManejoEstudiantes.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.csproj.AssemblyReference.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.csproj.SuggestedBindingRedirects.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.Form1.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.Properties.Resources.resources
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.csproj.GenerateResource.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.csproj.CoreCompileInputs.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.exe
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.pdb
