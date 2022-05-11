@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -40,6 +41,9 @@ namespace Logica.library
 
             }
         }
+
+
+
         //Validaciones para solo letras
         public void numberKeyPress(KeyPressEventArgs e)
         {
@@ -70,6 +74,13 @@ namespace Logica.library
                 e.Handled = true;
                 MessageBox.Show("Solo numeros permitidos");
             }
+        }
+
+
+        //Validacion para email
+        public bool comprobarFormatoEmail(string email)
+        {
+            return new EmailAddressAttribute().IsValid(email);
         }
     }
 }

@@ -58,15 +58,17 @@ namespace ManejoEstudiantes
         //TEXTBOX ID
         private void textBoxId_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if(textBoxId.Text.Length < 8)
+            if(textBoxId.Text.Length < 8 )
             {
                 estudiante.textBoxEvent.numberKeyPress(e);
             }
+            
             else if (char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
             }
-            else
+           
+            else 
             {
                 MessageBox.Show("Maximo de 8 numeros");
                 e.Handled = true;
@@ -130,6 +132,11 @@ namespace ManejoEstudiantes
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             estudiante.Registrar();
+            if (textBoxId.Text.Length < 8)
+            {
+                MessageBox.Show("El ID debe tener un minimo de 8 numeros");
+                
+            }
         }
     }
 }
