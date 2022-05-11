@@ -9,6 +9,8 @@ namespace Logica.library
 {
     public class TextBoxEvent
     {
+
+        //Validaciones para solo numeros
         public void textKeyPress(KeyPressEventArgs e)
         {
             //Condicion que solo nos permite ingresar datos de tipo texto 
@@ -38,6 +40,7 @@ namespace Logica.library
 
             }
         }
+        //Validaciones para solo letras
         public void numberKeyPress(KeyPressEventArgs e)
         {
             //Condicion que solo nos permite ingresar datos de tipo numero 
@@ -61,6 +64,7 @@ namespace Logica.library
                 e.Handled = true;
                 MessageBox.Show("No se permiten espacios");
             }
+           
             else
             {
                 e.Handled = true;

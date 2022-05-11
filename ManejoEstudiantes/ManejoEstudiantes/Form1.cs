@@ -16,27 +16,38 @@ namespace ManejoEstudiantes
         private Estudiantes estudiante ;
         public Form1()
         {
+            //crear una lista con los textBox
             InitializeComponent();
             var listTextBox = new List<TextBox>();  
             listTextBox.Add(textBoxId);
             listTextBox.Add(textBoxNombre);
             listTextBox.Add(textBoxApellido);
             listTextBox.Add(textBoxEmail);
-            estudiante = new Estudiantes(listTextBox);
+            //Crear una lista con los Label
+            var listLabel = new List<Label>();
+            listLabel.Add(label_id);
+            listLabel.Add(label_nombre);
+            listLabel.Add(label_apellido);
+            listLabel.Add(label_email);
+            
+            estudiante = new Estudiantes(listTextBox,listLabel);
 
         }
-
+        //PICTUREBOX FOTO ESTUDIANTE
         private void pictureBoxImagen_Click(object sender, EventArgs e)
         {
             estudiante.upload_Image.CargarImagen(pictureBoxImagen);
         }
 
+
+        //TEXTBOX ID
         private void textBoxId_TextChanged(object sender, EventArgs e)
         {
             if (textBoxId.Text.Equals(""))
             {
                 label_id.ForeColor = Color.LightSlateGray;
             }
+
             else
             {
                 label_id.ForeColor = Color.Green;
@@ -44,12 +55,16 @@ namespace ManejoEstudiantes
 
             }
         }
-
+        //TEXTBOX ID
         private void textBoxId_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(textBoxId.Text.Length < 8)
             {
                 estudiante.textBoxEvent.numberKeyPress(e);
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
             }
             else
             {
@@ -58,6 +73,8 @@ namespace ManejoEstudiantes
             }
         }
 
+
+        //TEXTBOX NOMBRE
         private void textBoxNombre_TextChanged(object sender, EventArgs e)
         {
             if (textBoxNombre.Text.Equals(""))
@@ -69,12 +86,14 @@ namespace ManejoEstudiantes
                 label_nombre.ForeColor= Color.Green;
             }
         }
-
+        //TEXTBOX NOMBRE
         private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
             estudiante.textBoxEvent.textKeyPress(e);
         }
 
+
+        //TEXTBOX APELLIDO
         private void textBoxApellido_TextChanged(object sender, EventArgs e)
         {
             if (textBoxApellido.Text.Equals(""))
@@ -86,12 +105,14 @@ namespace ManejoEstudiantes
                 label_apellido.ForeColor = Color.Green;
             }
         }
-
+        //TEXTBOX APELLIDO
         private void textBoxApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            estudiante.textBoxEvent.textKeyPress(e);
         }
 
+
+        //TEXTBOX EMAIL
         private void textBoxEmail_TextChanged(object sender, EventArgs e)
         {
             if (textBoxEmail.Text.Equals(""))
@@ -104,9 +125,11 @@ namespace ManejoEstudiantes
             }
         }
 
-        private void textBoxEmail_KeyPress(object sender, KeyPressEventArgs e)
+        
+        //BTN AGREGAR O CARGAR
+        private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            estudiante.Registrar();
         }
     }
 }
