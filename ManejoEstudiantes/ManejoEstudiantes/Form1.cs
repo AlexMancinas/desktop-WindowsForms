@@ -29,8 +29,9 @@ namespace ManejoEstudiantes
             listLabel.Add(label_nombre);
             listLabel.Add(label_apellido);
             listLabel.Add(label_email);
-            
-            estudiante = new Estudiantes(listTextBox,listLabel);
+
+            Object[] objetos = {pictureBoxImagen};
+            estudiante = new Estudiantes(listTextBox,listLabel, objetos);
 
         }
         //PICTUREBOX FOTO ESTUDIANTE

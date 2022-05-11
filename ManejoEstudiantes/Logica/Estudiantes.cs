@@ -13,11 +13,13 @@ namespace Logica
     {
         private List<TextBox> listTextBox;
         private List<Label> listLabel;
+        private PictureBox image;
 
-        public Estudiantes(List<TextBox> listTextBox, List<Label> listLabel)
+        public Estudiantes(List<TextBox> listTextBox, List<Label> listLabel, object[] objetos)
         {
             this.listTextBox = listTextBox;
             this.listLabel = listLabel;
+            image = (PictureBox)objetos[0];
         }
 
         //Validaciones para que no permita campos vacios
@@ -57,7 +59,7 @@ namespace Logica
                         {
                             if (textBoxEvent.comprobarFormatoEmail(listTextBox[3].Text))
                             {
-
+                               var imageArray = upload_Image.ImageToByte(image.Image); 
                             }
                             else
                             {
