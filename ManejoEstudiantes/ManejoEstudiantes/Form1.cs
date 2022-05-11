@@ -13,10 +13,17 @@ namespace ManejoEstudiantes
 {
     public partial class Form1 : Form
     {
-        private Estudiantes estudiante = new Estudiantes();
+        private Estudiantes estudiante ;
         public Form1()
         {
             InitializeComponent();
+            var listTextBox = new List<TextBox>();  
+            listTextBox.Add(textBoxId);
+            listTextBox.Add(textBoxNombre);
+            listTextBox.Add(textBoxApellido);
+            listTextBox.Add(textBoxEmail);
+            estudiante = new Estudiantes(listTextBox);
+
         }
 
         private void pictureBoxImagen_Click(object sender, EventArgs e)
@@ -40,7 +47,15 @@ namespace ManejoEstudiantes
 
         private void textBoxId_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if(textBoxId.Text.Length < 8)
+            {
+                estudiante.textBoxEvent.numberKeyPress(e);
+            }
+            else
+            {
+                MessageBox.Show("Maximo de 8 numeros");
+                e.Handled = true;
+            }
         }
 
         private void textBoxNombre_TextChanged(object sender, EventArgs e)
