@@ -1,0 +1,6 @@
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Data\bin\Debug\Data.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Data\bin\Debug\Data.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Data\obj\Debug\Data.csproj.AssemblyReference.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Data\obj\Debug\Data.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Data\obj\Debug\Data.pdb

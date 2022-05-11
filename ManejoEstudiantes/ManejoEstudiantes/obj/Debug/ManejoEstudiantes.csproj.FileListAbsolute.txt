@@ -9,3 +9,6 @@ C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEs
 C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.csproj.CoreCompileInputs.cache
 C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.exe
 C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\bin\Debug\Logica.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\bin\Debug\Logica.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\ManejoEstudiantes\obj\Debug\ManejoEstudiantes.csproj.CopyComplete
