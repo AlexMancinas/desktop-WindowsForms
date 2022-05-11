@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class Estudiantes : Upload_image
+    public class Estudiantes : Library
     {
 
     }
