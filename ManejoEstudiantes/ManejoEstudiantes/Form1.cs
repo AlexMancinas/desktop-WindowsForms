@@ -21,6 +21,7 @@ namespace ManejoEstudiantes
             //crear una lista con los textBox
             InitializeComponent();
             library = new Library();
+
             var listTextBox = new List<TextBox>();  
             listTextBox.Add(textBoxId);
             listTextBox.Add(textBoxNombre);
@@ -40,7 +41,7 @@ namespace ManejoEstudiantes
         //PICTUREBOX FOTO ESTUDIANTE
         private void pictureBoxImagen_Click(object sender, EventArgs e)
         {
-            estudiante.upload_Image.CargarImagen(pictureBoxImagen);
+            library.upload_Image.CargarImagen(pictureBoxImagen);
         }
 
 
@@ -64,7 +65,7 @@ namespace ManejoEstudiantes
         {
             if(textBoxId.Text.Length < 8 )
             {
-                estudiante.textBoxEvent.numberKeyPress(e);
+                library.textBoxEvent.numberKeyPress(e);
             }
             
             else if (char.IsControl(e.KeyChar))
@@ -95,7 +96,7 @@ namespace ManejoEstudiantes
         //TEXTBOX NOMBRE
         private void textBoxNombre_KeyPress(object sender, KeyPressEventArgs e)
         {
-            estudiante.textBoxEvent.textKeyPress(e);
+            library.textBoxEvent.textKeyPress(e);
         }
 
 
@@ -114,7 +115,7 @@ namespace ManejoEstudiantes
         //TEXTBOX APELLIDO
         private void textBoxApellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-            estudiante.textBoxEvent.textKeyPress(e);
+            library.textBoxEvent.textKeyPress(e);
         }
 
 

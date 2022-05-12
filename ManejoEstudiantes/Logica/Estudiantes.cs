@@ -17,6 +17,7 @@ namespace Logica
         private List<Label> listLabel;
         private PictureBox image;
         private Library library;
+        private Upload_image upload_Image;
 
         public Estudiantes(List<TextBox> listTextBox, List<Label> listLabel, object[] objetos)
         {
@@ -24,7 +25,7 @@ namespace Logica
             this.listLabel = listLabel;
             library= new Library();
             image = (PictureBox)objetos[0];
-           
+            upload_Image = new Upload_image();
         }
 
         //Validaciones para que no permita campos vacios
@@ -65,13 +66,17 @@ namespace Logica
                             if (library.textBoxEvent.comprobarFormatoEmail(listTextBox[3].Text))
                             {
                                var imageArray = library.upload_Image.ImageToByte(image.Image);
-                                var db = new Conexion();
-                                db.Insert(new Estudiante(){
-                                    nid = listTextBox[0].Text,
-                                    nombre = listTextBox[1].Text,
-                                    apellido = listTextBox[2].Text,
-                                    email = listTextBox[3].Text,   
-                                });
+                                using (var db = new Conexion())
+                                {
+                                    db.Insert(new Estudiante()
+                                    {
+                                        nid = listTextBox[0].Text,
+                                        nombre = listTextBox[1].Text,
+                                        apellido = listTextBox[2].Text,
+                                        email = listTextBox[3].Text,
+                                    });
+                                }
+                                
                             }
                             else
                             {
