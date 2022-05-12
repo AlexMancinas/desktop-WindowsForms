@@ -1,4 +1,5 @@
 ﻿using Logica;
+using Logica.library;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,10 +15,12 @@ namespace ManejoEstudiantes
     public partial class Form1 : Form
     {
         private Estudiantes estudiante ;
+        private Library library;
         public Form1()
         {
             //crear una lista con los textBox
             InitializeComponent();
+            library = new Library();
             var listTextBox = new List<TextBox>();  
             listTextBox.Add(textBoxId);
             listTextBox.Add(textBoxNombre);

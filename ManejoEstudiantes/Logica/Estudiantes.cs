@@ -1,4 +1,6 @@
-﻿using Logica.library;
+﻿using Data;
+using LinqToDB;
+using Logica.library;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -9,17 +11,20 @@ using System.Windows.Forms;
 
 namespace Logica
 {
-    public class Estudiantes : Library
+    public class Estudiantes 
     {
         private List<TextBox> listTextBox;
         private List<Label> listLabel;
         private PictureBox image;
+        private Library library;
 
         public Estudiantes(List<TextBox> listTextBox, List<Label> listLabel, object[] objetos)
         {
             this.listTextBox = listTextBox;
             this.listLabel = listLabel;
+            library= new Library();
             image = (PictureBox)objetos[0];
+           
         }
 
         //Validaciones para que no permita campos vacios
@@ -57,9 +62,16 @@ namespace Logica
                         }
                         else
                         {
-                            if (textBoxEvent.comprobarFormatoEmail(listTextBox[3].Text))
+                            if (library.textBoxEvent.comprobarFormatoEmail(listTextBox[3].Text))
                             {
-                               var imageArray = upload_Image.ImageToByte(image.Image); 
+                               var imageArray = library.upload_Image.ImageToByte(image.Image);
+                                var db = new Conexion();
+                                db.Insert(new Estudiante(){
+                                    nid = listTextBox[0].Text,
+                                    nombre = listTextBox[1].Text,
+                                    apellido = listTextBox[2].Text,
+                                    email = listTextBox[3].Text,   
+                                });
                             }
                             else
                             {

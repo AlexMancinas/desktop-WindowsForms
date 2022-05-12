@@ -4,3 +4,14 @@ C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\o
 C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
 C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\obj\Debug\Logica.dll
 C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\obj\Debug\Logica.pdb
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\linq2db.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\linq2db.xml
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\Data.dll
+C:\Users\Master\Documents\GitHub\desktop-WindowsForms\ManejoEstudiantes\Logica\bin\Debug\Data.pdb
